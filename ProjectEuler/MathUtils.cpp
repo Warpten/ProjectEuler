@@ -32,13 +32,13 @@ template <class T> bool ProblemSolvers::isPrime(T number)
     if (number == 2)
         return true;
     
-    T max = ceil(sqrt(number));
+    T max = ceil(pow(number, 0.5));
 
     for (T itr = 2; itr <= number; ++itr)
         if (number % itr == 0)
             return false;
     return true;
-};
+}
 
 template <class T> bool ProblemSolvers::isPalindrome(T number)
 {
@@ -51,6 +51,11 @@ template <class T> bool ProblemSolvers::isPalindrome(T number)
     }
 
     return reversed == number;
-};
+}
+
+template <class T> bool ProblemSolvers::isPythagoreanTriplet(T a, T b, T c)
+{
+    return ((a * a) + (b * b)) == (c * c);
+}
 
 #endif // _EULER_MATHUTILS

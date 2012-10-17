@@ -25,9 +25,6 @@ class Utils
         static void SetConsoleColor(ConsoleColor command);
         static void Print(ConsoleColor color, const char* message, ...);
         static void Print(const char* message, ...);
-
-        unsigned int GetMSTime();
-        int GetMSTimeDiff(unsigned int time);
 };
 
 #endif // _EULER_UTILS_H

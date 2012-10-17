@@ -20,6 +20,9 @@
 #include <algorithm>
 #include <stddef.h>
 #include <math.h>
+#include <time.h>
+#include <stdint.h>
+#include <stdio.h>
 
 #pragma warning(disable: 4995 4996)
 

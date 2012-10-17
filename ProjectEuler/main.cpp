@@ -10,16 +10,18 @@ int main()
     unsigned int problemIndex = 0;
 	std::cin >> problemIndex;
 
+    ProblemSolvers* solvers = new ProblemSolvers();
     if (problemIndex == 0)
     {
-        Utils::Print(RED, "[ERROR] No problem selected. Exiting\n");
+        solvers->SetInTestSuite(true);
+        solvers->SolveEverything();
         return 0;
     }
 
-    ProblemSolvers* solvers = new ProblemSolvers();
     if (solvers->IsProblemHandled(problemIndex))
     {
-        Utils::Print(LIGHTBLUE, "[INFO] Problem solver found, solving the problem...\n");
+        Utils::Print(LIGHTBLUE, "[INFO] Solver found for problem #%u..\n", problemIndex);
+        solvers->SetInTestSuite(false);
         solvers->CallProblemHandler(problemIndex);
     }
     else

@@ -80,12 +80,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MathUtils.cpp" />
     <ClCompile Include="ProblemSolvers.cpp" />
+    <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ProblemSolvers.h" />
     <ClInclude Include="ProjectEuler.h" />
     <ClInclude Include="SharedDefines.h" />
+    <ClInclude Include="Timer.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
