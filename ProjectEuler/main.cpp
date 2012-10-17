@@ -15,6 +15,7 @@ int main()
     {
         solvers->SetInTestSuite(true);
         solvers->SolveEverything();
+        delete solvers;
         return 0;
     }
 
